@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../js/1.js">
+    <link rel="stylesheet" href="../css/1.css">
+    <title>Examen</title>
+</head>
+<body>
+   
+        <header>
+            <h1>PÁGINA DE ARMANDO</h1>
+        </header>
+        <div class="hola"><img src="../img/pa.jpg" alt="Paisaje de La Paz" width="100%" ></div>
+
+        <div class="contenido">
+            <main>
+                <h2>CONTENIDO:</h2>
+                <h1>DANZAS TRADICIONALES DE LA PAZ</h1>
+                <div class="contenedor-formulario">
+        <h1>Cuestionario sobre Danzas Tradicionales de La Paz</h1>
+        <p class="subtitulo">Responde las preguntas obligatorias sobre nuestra cultura y folklore.</p>
+
+        <div id="mensajeError" class="alerta error"> Por favor, responde todas las preguntas del formulario.</div>
+        <div id="mensajeExito" class="alerta exito"> ¡Formulario completado con éxito! Tus respuestas fueron validadas.</div>
+
+        <form id="formDanzas" onsubmit="validarFormulario(event)">
+
+            <div class="pregunta-bloque">
+                <label class="titulo-pregunta" for="nombreUsuario">1. ¿Cuál es tu nombre completo?</label>
+                <input type="text" id="nombreUsuario" placeholder="Escribe tu nombre">
+            </div>
+
+            <div class="pregunta-bloque">
+                <label class="titulo-pregunta" for="danzaFavorita">2. ¿Cuál de estas danzas paceñas es tu favorita?</label>
+                <select id="danzaFavorita">
+                    <option value="">Selecciona una danza...</option>
+                    <option value="morenada">La Morenada</option>
+                    <option value="caporales">Los Caporales</option>
+                    <option value="diablada">La Diablada</option>
+                    <option value="llamerada">La Llamerada</option>
+                    <option value="waka-waka">Waka Waka</option>
+                </select>
+            </div>
+
+            <div class="pregunta-bloque">
+                <label class="titulo-pregunta">3. ¿Cuál es la festividad folklórica más importante de la ciudad de La Paz?</label>
+                <div class="opciones-grupo">
+                    <label class="opcion-item"><input type="radio" name="festividad" value="gran-poder"> Jesús del Gran Poder</label>
+                    <label class="opcion-item"><input type="radio" name="festividad" value="carnaval"> Carnaval de Anata</label>
+                    <label class="opcion-item"><input type="radio" name="festividad" value="urkupina"> Virgen de Urkupiña</label>
+                </div>
+            </div>
+
+            <div class="pregunta-bloque">
+                <label class="titulo-pregunta">4. ¿Qué personaje es el principal ícono de la danza de la Morenada?</label>
+                <div class="opciones-grupo">
+                    <label class="opcion-item"><input type="radio" name="personaje" value="reye-moreno"> El Rey Moreno / Achachi</label>
+                    <label class="opcion-item"><input type="radio" name="personaje" value="pepino"> El Pepino</label>
+                    <label class="opcion-item"><input type="radio" name="personaje" value="kusillo"> El Kusillo</label>
+                </div>
+            </div>
+
+            <div class="pregunta-bloque">
+                <label class="titulo-pregunta" for="opinion">5. Brevemente, ¿qué significado tiene para ti la vestimenta y la música tradicional paceña?</label>
+                <textarea id="opinion" rows="3" placeholder="Escribe tu opinión aquí..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-enviar">Enviar Respuestas</button>
+        </form>
+    </div>
+        </div>
+        <div>
+            <nav class="xd">
+                <h3>MENU</h3>
+                <ul>
+                    <li><a href="../pag/pag1.html">HISTORIA</a></li>
+                    <li><a href="../pag/pag2.html">PERSONAJES</a></li>
+                    <li><a href="../pag/pag3.html">PLATOS TIPICOS</a></li>
+                    <li><a href="../index.html">INICIO</a></li>
+                </ul>
+            </nav>  
+        </div>
+</body>
+</html>
